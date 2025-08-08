@@ -23,7 +23,7 @@ use const PHP_VERSION_ID;
  */
 class RemoveUnserializeForInternalSerializableClassesPass implements Pass
 {
-    public const DUMMY_METHOD_DEFINITION = 'public function unserialize(string $data): void {} ';
+    public const DUMMY_METHOD_DEFINITION = 'public function unserialize($data) {} ';
 
     public const DUMMY_METHOD_DEFINITION_LEGACY = 'public function unserialize($string) {} ';
 
